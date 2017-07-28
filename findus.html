@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="london donut company">
+		<meta name="keywords" content="donut, doughnut, london, company, restaurant, food, cape town, south africa, british">
+		<meta name="author" content="Leandra de Sousa">
+		
+	<title>Find Us</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+			<!-- shiv -->
+
+			<!--[if lt IE 9]>
+			<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+		<![endif]-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900|Sofia" rel="stylesheet">
+	<link rel="stylesheet" href="icons/css/font-awesome.min.css">
+</head>
+<body>
+	<img class="bgimage01" src="img/donut01.png"
+	alt="donut pattern">
+		<img class="bgimage02" src="img/donut02.png"
+		alt="donut pattern">
+
+<div class="container01">
+<!-- nav -->
+	<nav class="col-dk-12 hidden-mobile">
+		<ul>
+			<li><a href="index.html">about</a></li>
+			<li><a href="flavours.html">flavours</a></li>
+			<li><a href="findus.html">find us</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+	</nav>
+
+<!-- header -->
+<!-- content images declared for each device -->
+	<header class="hidden-mobile hidden-tablet header-blue">
+		<img src="img/desktopbg_findus.png"
+		alt="logo">
+	</header>
+
+		<header class="hidden-desktop hidden-tablet header-blue">
+
+			<div class="hamMenu-button" onclick="toggleMenu()"> 
+				<center>
+				<div class="hamMenu-icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+				</center>
+			</div>
+
+				<div class="hamMenu"> 
+				<ul>
+					<li><a href="index.html">about</a></li>
+					<li><a href="flavours.html">flavours</a></li>
+					<li><a href="findus.html">find us</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+				</div>
+
+			<img src="img/mobilebg_findus.png"
+				alt="logo">
+		</header>
+
+			<header class="hidden-mobile hidden-desktop header-blue">
+				<img src="img/tabletbg_findus.png"
+				alt="logo">
+			</header>
+
+<!-- intro -->
+	<div class="col-dk-12 intro03">
+		<h2>We move around all week just to make sure everyone gets our donuts!</h2>
+		<p>We have a handful of regular food markets that we attend every day of the week around the city. Watch this space or follow us on our social media pages to get regular updates about where to find us</p>
+	</div>
+
+	<article class="col-dk-12 col-md-12 col-sm-12 findus-bg">
+		<img class="center-align" src="img/desktop-findus.jpg" alt="donuts on display">
+	</article>
+
+	<section class="article-bg">
+		<div class="finduslist">
+			<h3>regular markets &amp; pop-up shops</h3>
+				<h4>WEDNESDAY: FIND US AT THE EARTHFAIR MARKET IN TOKAI (OPPOSITE BUILDER’S WAREHOUSE) FROM 11PM TILL 3PM</h4>
+				<h4>THURSDAY: WE’LL BE AT THE EARTHFAIR MARKET IN ST. GEORGES MALL FROM 11AM TILL 4PM</h4>
+				<h4>EVERY SATURDAY AT 10AM - 3PM YORKSHIRE MARKET, OPPOSITE SUNNY HILLS, NEAR HOT DOG GOD</h4>
+				<h4>SOUTH HARBOUR MARKET SUNDAYS LISTED BELOW JUNE - 4TH, 11TH &amp; 18TH</h4>
+				<h4>YOU CAN ALSO FIND US ON UBER EATS EVERY WEEKEND</h4>
+			<h3>events you shouldn’t miss</h3>
+				<h4>04/08/2017 - 06/08/2017 - THE ROYAL LONDON DOUGHNUT EATING COMPETITION - FIND US ON QUEEN SQUARE</h4>
+		</div>
+	</section>
+
+	
+
+	
+	
+<!-- content -->
+
+
+<!-- footer -->
+	<footer class="col-dk-12 col-md-12 col-sm-12 flex-index">
+		<div class="col-dk-4 col-md-6 hidden-mobile hidden-tablet footer01">
+		<img src="img/logo02.png"
+		alt="logo">
+		</div>
+
+		<div class="col-dk-4 col-md-6 col-sm-12 footer02"><ul>
+			<li><a href="index.html">about</a></li>
+			<li><a href="flavours.html">flavours</a></li>
+			<li><a href="findus.html">find us</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul></div>
+
+		<div class="col-dk-4 col-md-4 hidden-mobile hidden-tablet footer03">
+			<a href="index.html"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			<a href="index.html"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+			<a href="index.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+			<a href="index.html"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+		</div>
+	</footer>
+
+
+
+</div>
+</body>
+
+<script>
+    var toggleState = true;
+    var menuThg = document.getElementsByClassName("hamMenu")[0];
+    
+    function toggleMenu () {
+        
+        if (toggleState == true) {
+            Expand();
+            
+            
+        }else if (toggleState ==false) {
+            Close();
+    
+        }
+    }
+    
+    function Close () {
+        menuThg.style.width = "0";
+        menuThg.style.height = "0";
+        toggleState = true;
+    }
+    
+    function Expand () {
+        menuThg.style.width = "100%";
+        menuThg.style.height = "35vh";
+  
+
+        toggleState = false;
+    }
+    
+</script>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="london donut company">
+		<meta name="keywords" content="donut, doughnut, london, company, restaurant, food, cape town, south africa, british">
+		<meta name="author" content="Leandra de Sousa">
+		
+	<title>Contact</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+			<!-- shiv -->
+
+			<!--[if lt IE 9]>
+			<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+		<![endif]-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900|Sofia" rel="stylesheet">
+	<link rel="stylesheet" href="icons/css/font-awesome.min.css">
+</head>
+
+<body>
+	<img class="bgimage01" src="img/donut01.png"
+	alt="donut pattern">
+		<img class="bgimage02" src="img/donut02.png"
+		alt="donut pattern">
+
+<div class="container01">
+<!-- nav -->
+	<nav class="col-dk-12 hidden-mobile alt-red">
+		<ul>
+			<li><a href="index.html">about</a></li>
+			<li><a href="flavours.html">flavours</a></li>
+			<li><a href="findus.html">find us</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+	</nav>
+
+<!-- header -->
+<!-- content images declared for each device -->
+	<header class="hidden-mobile hidden-tablet header-red">
+		<img src="img/desktopbg_contact.png"
+		alt="logo">
+	</header>
+
+		<header class="hidden-desktop hidden-tablet header-red">
+
+			<div class="hamMenu-button red-b" onclick="toggleMenu()"> 
+				<center>
+				<div class="hamMenu-icon red-i"><i class="fa fa-bars" aria-hidden="true"></i></div>
+				</center>
+			</div>
+
+				<div class="hamMenu red-m"> 
+				<ul>
+					<li><a href="index.html">about</a></li>
+					<li><a href="flavours.html">flavours</a></li>
+					<li><a href="findus.html">find us</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+				</div>
+
+			<img src="img/mobilebg_contact.png"
+				alt="logo">
+		</header>
+
+			<header class="hidden-mobile hidden-desktop header-red">
+				<img src="img/tabletbg_contact.png"
+				alt="logo">
+			</header>
+
+<!-- intro -->
+	<div class="col-dk-12 intro03">
+		<h2>We would love to hear from you.</h2>
+		<p>Have any questions or want to suggest a flavour for our next mind blowing donut? Feel free to send us a message and we’ll get back to you! If you have any order enquiries for functions, please email or call us.</p>
+	</div>
+	
+<!-- content -->
+	
+	<main class="contact-main">
+	<section class="col-dkl-7 col-dk-7 col-md-12 col-sm-12 message">
+		<h1>Send us a message</h1>
+		<form action="contact.php">
+			<input type="text" name="firstname" placeholder="Full Name">
+			<br>
+			<input type="text" name="lastname" placeholder="Email Address">
+			<br>
+			<textarea name="message" rows="4" cols="30">Message</textarea>
+			<br>
+			<input type="submit">
+		</form> 
+	</section>
+	<section class="col-dkl-5 col-dk-5 col-md-12 col-sm-12 details">
+		<h1>Get in touch</h1> 
+			<div class="deets">
+			<i class="fa fa-phone" aria-hidden="true"></i>
+			<p>021 419 5485</p>
+			</div>
+			<div class="deets">
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<p>info@londondonutco.co.za</p>
+			</div>
+			<div class="deets">
+			<i class="fa fa-home" aria-hidden="true"></i>
+			<p>HO: 18b Union Str., Woodstock, Cape Town</p>
+			</div>
+			<div class="deets">
+			<i class="fa fa-map-marker" aria-hidden="true"></i>
+			<p>Come and visit us <a href="findus.html">here</a></p>
+			</div>
+	</section>
+	</main>
+	
+
+<!-- footer -->
+	<footer class="col-dk-12 col-md-12 col-sm-12 flex-index01 ">
+		<div class="col-dk-4 col-md-6 hidden-mobile hidden-tablet footer01">
+		<img src="img/logo02.png"
+		alt="logo">
+		</div>
+
+		<div class="col-dk-4 col-md-6 col-sm-12 footer02"><ul>
+			<li><a href="index.html">about</a></li>
+			<li><a href="flavours.html">flavours</a></li>
+			<li><a href="findus.html">find us</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul></div>
+
+		<div class="col-dk-4 col-md-4 hidden-mobile hidden-tablet footer03">
+			<a href="index.html"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			<a href="index.html"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+			<a href="index.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+			<a href="index.html"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+		</div>
+	</footer>
+
+
+
+</div>
+</body>
+
+<script>
+    var toggleState = true;
+    var menuThg = document.getElementsByClassName("hamMenu")[0];
+    
+    function toggleMenu () {
+        
+        if (toggleState == true) {
+            Expand();
+            
+            
+        }else if (toggleState ==false) {
+            Close();
+    
+        }
+    }
+    
+    function Close () {
+        menuThg.style.width = "0";
+        menuThg.style.height = "0";
+        toggleState = true;
+    }
+    
+    function Expand () {
+        menuThg.style.width = "100%";
+        menuThg.style.height = "35vh";
+  
+
+        toggleState = false;
+    }
+    
+</script>
+
+</html>
